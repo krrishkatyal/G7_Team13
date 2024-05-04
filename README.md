@@ -1,7 +1,7 @@
 # Made By 
 # 1. Krrish Kaytal (Product Manager) 2310990553
-# 2. Kanish Mahajan (Tester) 2310990538
-# 3. Krish  (Developer) 2310990550
+# 2. Kumar Gaurav Sagar 2310990554
+# 3. Lakshay Kohli 2310990557
 
 # Hangman-Python
 A simple hangman game made with python and pygame.
