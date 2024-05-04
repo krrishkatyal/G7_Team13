@@ -1,5 +1,5 @@
 # Made By 
-# 1. Krrish Kaytal (Product Manager) 2310990553
+# 1. Krrish Kaytal 2310990553
 # 2. Kumar Gaurav Sagar 2310990554
 # 3. Lakshay Kohli 2310990557
 
