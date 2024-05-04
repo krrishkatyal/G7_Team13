@@ -1,0 +1,12 @@
+Krrish , name of a friend
+Python , programing lang
+asia , continent
+indias , country
+apple , fruit
+cow , animal
+mango , fruit
+guitar , instrument
+red , colour
+blue , colour
+orange,colour
+
