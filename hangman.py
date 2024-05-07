@@ -28,6 +28,7 @@ hangmanPics = [pygame.image.load('hangman0.png'), pygame.image.load('hangman1.pn
 
 limbs = 0
 hint = ''
+tries_left = 7
 
 
 def redraw_game_window():
@@ -35,6 +36,8 @@ def redraw_game_window():
     global hangmanPics
     global limbs
     global hint
+    global tries_left  # Add tries_left
+
     win.fill(WHITE)
     for i in range(len(buttons)):
         if buttons[i][4]:
@@ -57,6 +60,10 @@ def redraw_game_window():
     hint_label = hint_font.render("Hint: " + hint, 1, BLACK)
     win.blit(hint_label, (20, 150))
 
+    # Display tries left
+    tries_label = hint_font.render("Tries left: " + str(tries_left), 1, BLACK)
+    win.blit(tries_label, (550, 125))
+
     pygame.display.update()
 
 
@@ -71,7 +78,9 @@ def randomWord():
 
 def hang(guess):
     global word
+    global tries_left  # Subtract 1 from tries_left
     if guess.lower() not in word.lower():
+        tries_left -= 1  # Subtract 1 from tries_left
         return True
     else:
         return False
@@ -102,6 +111,9 @@ def buttonHit(x, y):
 
 def end(winner=False):
     global limbs
+    global guessed
+    global tries_left  # Add tries_left
+
     lostTxt = 'You Lost, press any key to play again...'
     winTxt = 'WINNER!, press any key to play again...'
 
@@ -138,13 +150,16 @@ def reset():
     global guessed
     global buttons
     global word
-    global hint  # Add this line
+    global hint
+    global tries_left  # Add tries_left
+
     for i in range(len(buttons)):
         buttons[i][4] = True
 
     limbs = 0
     guessed = []
-    word, hint = randomWord()  # Update this line
+    word, hint = randomWord()
+    tries_left = 7 # Reset tries_left
 
 
 increase = round(winWidth / 13)
@@ -157,7 +172,7 @@ for i in range(26):
         y = 85
     buttons.append([YELLOW, x, y, 20, True, 65 + i])
 
-word, hint = randomWord()  # Update this line
+word, hint = randomWord()
 inPlay = True
 
 while inPlay:
