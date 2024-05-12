@@ -3,10 +3,110 @@ Python , programing lang
 asia , continent
 indias , country
 apple , fruit
-cow , animal
 mango , fruit
 guitar , instrument
 red , colour
 blue , colour
 orange,colour
-
+Cow, Animal
+Gandhi, Name
+Tree, Plant
+Paris, City
+Carrot, Vegetable
+Sunflower, Plant
+Lion, Animal
+River, Waterbody
+London, City
+Tulip, Flower
+Elephant, Animal
+Picasso, Artist
+Ocean, Waterbody
+New York, City
+Apple, Fruit
+Oak, Tree
+Tiger, Animal
+Lake, Waterbody
+Tokyo, City
+Banana, Fruit
+Pine, Tree
+Sydney, City
+Strawberry, Fruit
+Maple, Tree
+Giraffe, Animal
+Da Vinci, Artist
+Mumbai, City
+Mango, Fruit
+Palm, Tree
+Penguin, Animal
+Darwin, Scientist
+Beijing, City
+Grape, Fruit
+Redwood, Tree
+Bear, Animal
+Newton, Scientist
+Cairo, City
+Watermelon, Fruit
+Birch, Tree
+Crocodile, Animal
+Galileo, Scientist
+Istanbul, City
+Peach, Fruit
+Elm, Tree
+Snake, Animal
+Curie, Scientist
+Amsterdam, City
+Pear, Fruit
+Willow, Tree
+Koala, Animal
+Tesla, Inventor
+Vienna, City
+Blueberry, Fruit
+Cedar, Tree
+Fox, Animal
+Edison, Inventor
+Budapest, City
+Kiwi, Fruit
+Sequoia, Tree
+Rabbit, Animal
+Bell, Inventor
+Brasília, City
+Plum, Fruit
+Fir, Tree
+Owl, Animal
+Ford, Inventor
+Los Angeles, City
+Avocado, Fruit
+Chestnut, Tree
+Butterfly, Animal
+Wright, Inventor
+Moscow, City
+Pineapple, Fruit
+Banyan, Tree
+Wolf, Animal
+Marconi, Inventor
+Seoul, City
+Papaya, Fruit
+Ginkgo, Tree
+Deer, Animal
+Rio de Janeiro, City
+Orange, Fruit
+Walnut, Tree
+Polar Bear, Animal
+Wright Brothers, Inventors
+Grapefruit, Fruit
+Poplar, Tree
+Chimpanzee, Animal
+Hubble, Scientist
+Pinecone, Fruit
+Aspen, Tree
+Antelope, Animal
+Hawking, Scientist
+Prairie
+Coconut, Fruit
+Sycamore, Tree
+Kangaroo, Animal
+Galileo, Scientist
+Plum, Fruit
+Cedar, Tree
+Ostrich, Animal
+Tesla, Scientist
