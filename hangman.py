@@ -7,12 +7,15 @@ winWidth = 700
 win = pygame.display.set_mode((winWidth, winHeight))
 
 BLACK = (0, 0, 0)
-WHITE = (255, 255, 255)
+WHITE = (255, 255, 255) 
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
 LIGHT_BLUE = (102, 255, 255)
 YELLOW = (255, 255, 0)
+
+# Load the background image
+background = pygame.image.load('i.jpg')  # Replace 'background_image.jpg' with the filename of your background image
 
 btn_font = pygame.font.SysFont("arial", 20)
 guess_font = pygame.font.SysFont("monospace", 24)
@@ -36,18 +39,22 @@ def redraw_game_window():
     global hangmanPics
     global limbs
     global hint
-    global tries_left  # Add tries_left
+    global tries_left
 
-    win.fill(WHITE)
+    # Draw the background image
+    win.blit(background, (0, 0))
+    
+
+    # Draw buttons
     for i in range(len(buttons)):
         if buttons[i][4]:
-            pygame.draw.circle(win, BLACK, (buttons[i][1], buttons[i][2]), buttons[i][3])
+            pygame.draw.circle(win, WHITE, (buttons[i][1], buttons[i][2]), buttons[i][3])
             pygame.draw.circle(win, buttons[i][0], (buttons[i][1], buttons[i][2]), buttons[i][3] - 2)
             label = btn_font.render(chr(buttons[i][5]), 1, BLACK)
             win.blit(label, (buttons[i][1] - (label.get_width() / 2), buttons[i][2] - (label.get_height() / 2)))
 
     spaced = spacedOut(word, guessed)
-    label1 = guess_font.render(spaced, 1, BLACK)
+    label1 = guess_font.render(spaced, 1, WHITE)
     rect = label1.get_rect()
     length = rect[2]
 
@@ -57,11 +64,11 @@ def redraw_game_window():
     win.blit(pic, (winWidth / 2 - pic.get_width() / 2 + 20, 150))
 
     # Display the hint
-    hint_label = hint_font.render("Hint: " + hint, 1, BLACK)
+    hint_label = hint_font.render("Hint: " + hint, 1, WHITE)
     win.blit(hint_label, (20, 150))
 
     # Display tries left
-    tries_label = hint_font.render("Tries left: " + str(tries_left), 1, BLACK)
+    tries_label = hint_font.render("Tries left: " + str(tries_left), 1, WHITE)
     win.blit(tries_label, (550, 125))
 
     pygame.display.update()
@@ -78,9 +85,9 @@ def randomWord():
 
 def hang(guess):
     global word
-    global tries_left  # Subtract 1 from tries_left
+    global tries_left
     if guess.lower() not in word.lower():
-        tries_left -= 1  # Subtract 1 from tries_left
+        tries_left -= 1
         return True
     else:
         return False
@@ -112,7 +119,7 @@ def buttonHit(x, y):
 def end(winner=False):
     global limbs
     global guessed
-    global tries_left  # Add tries_left
+    global tries_left
 
     lostTxt = 'You Lost, press any key to play again...'
     winTxt = 'WINNER!, press any key to play again...'
@@ -151,7 +158,7 @@ def reset():
     global buttons
     global word
     global hint
-    global tries_left  # Add tries_left
+    global tries_left
 
     for i in range(len(buttons)):
         buttons[i][4] = True
@@ -159,7 +166,7 @@ def reset():
     limbs = 0
     guessed = []
     word, hint = randomWord()
-    tries_left = 7 # Reset tries_left
+    tries_left = 7
 
 
 increase = round(winWidth / 13)
@@ -219,3 +226,4 @@ while inPlay:
                             end(True)
 
 pygame.quit()
+
