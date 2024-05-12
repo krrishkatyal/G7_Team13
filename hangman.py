@@ -15,7 +15,7 @@ LIGHT_BLUE = (102, 255, 255)
 YELLOW = (255, 255, 0)
 
 # Load the background image
-background = pygame.image.load('i.jpg')  # Replace 'background_image.jpg' with the filename of your background image
+background = pygame.image.load('background.jpg')  # Replace 'background_image.jpg' with the filename of your background image
 
 btn_font = pygame.font.SysFont("arial", 20)
 guess_font = pygame.font.SysFont("monospace", 24)
