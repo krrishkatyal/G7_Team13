@@ -14,9 +14,8 @@ Once hangman is completed you will lose.
 
 # Additional features
 Screen will turn green when you guessed the answer correctly 
-and turn red when you have used all tries to guess the word.<br>
-You will be provided with the hint too.<br>
-Alphabets will be on the screen you just have to click them or type the words 
+and turn red when you have used all tries to guess the word.
+You will be provided with the hint too . Alphabets will be on the screen you just have to click them or type the words 
 and when you have clicked or typed alphabet once it won't be shown to you again until the next game.
 
 # Versions
