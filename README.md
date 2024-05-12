@@ -2,7 +2,7 @@
 # 1. Krrish Kaytal 2310990553
 # 2. Kumar Gaurav Sagar 2310990554
 # 3. Lakshay Kohli 2310990557
-
+<br>
 # Hangman-Python
 A simple hangman game made with python and pygame.
 
