@@ -27,7 +27,12 @@ In base version of hangman we have a simple hangman game in which there is hint 
 In Hangman version 2 we have enable user to use keypad too in the game .
 <li> <b> Hangman version 3 </b> </li>
 In Hangman version 3 we have added no of tries for the user so that it is easier for user to know after how many times he will lost.
+<li><b>HANGMAN VERSION 4 </b></li>
+In HANGMAN VERSION 4 we have added a new background .
+<li><b>HANGMAN VERSION 5 </b></li>
+In HANGMAN VERSION 5 we have added around 115 words + there hints in our words.txt file so that user will not be able to guess the word that easily as it was before.
 </ul>
+
 
 
 
