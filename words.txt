@@ -1,3 +1,4 @@
+These are the input names for hangman game
 Krrish , name of a friend
 Python , programing lang
 asia , continent
