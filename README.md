@@ -29,7 +29,7 @@ In Hangman version 3 we have added no of tries for the user so that it is easier
 <li style ="color: yellow; "><b>HANGMAN VERSION 4 </b></li>
 In HANGMAN version 4 we have added a new background .</br> <hr>
 <li style ="color: yellow; "><b>HANGMAN VERSION 5 </b></li>
-In HANGMAN version 5 we have added around 115 words + there hints in our words.txt file so that user will not be able to guess the word that easily as it was before.<br>
+In HANGMAN version 5 we have added around 100 words + there hints in our words.txt file so that user will not be able to guess the word that easily as it was before.<br>
 </ul>
 
 

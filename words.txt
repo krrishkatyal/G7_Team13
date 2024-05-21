@@ -101,7 +101,6 @@ Pinecone, Fruit
 Aspen, Tree
 Antelope, Animal
 Hawking, Scientist
-Prairie
 Coconut, Fruit
 Sycamore, Tree
 Kangaroo, Animal
